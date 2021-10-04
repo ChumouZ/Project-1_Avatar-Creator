@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Urbanist:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    </link>
+
+</head>
+
+<body>
+    <h1 id="heading">Generative Art Creator</h1>
+    <section id="page_1" class="project_section">
+
+        <div id="display_image">
+            <img id="img" class="project__image" style="width: 400px; height: 400px"
+                src="assets/Photo.jpg"/>
+            <div class="points">
+                <span class="points-point" id="point_1"></span>
+                <span class="points-point" id="point_2"></span>
+            </div>
+        </div>
+
+
+        <div class="project_desc">
+            <h2>Let's create a piece of artwork!</h2>
+            <div class="img-submit">
+                <input class="image_input" type="text" placeholder="Enter Image URL" />
+                <button class="button" id="submit-button" type="button">Submit</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="page_2" class="project_section hidden_content">
+        <div id="hidden_content">
+            <div id="canvas_container"></div>
+            <div class="cos_btn">
+                <button id="reload_img_btn">Switch results</button>
+                <button id="change_color_btn">Color Matching</button>
+            </div>
+        </div>
+        <button id="go_back_btn">Back</button>
+    </section>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="script.js"></script>
